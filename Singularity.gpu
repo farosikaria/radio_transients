@@ -23,7 +23,7 @@ From:  nvidia/cuda:10.2-devel # Needed for fetch
     echo "Building FETCH"
     conda install -y -c anaconda cudatoolkit==10.0.130 tensorflow-gpu==1.13.1
     conda install -y -c anaconda keras scikit-learn pandas scipy numpy matplotlib scikit-image tqdm numba pyyaml=3.13
-    git clone https://github.com/devanshkv/fetch.git
+    git clone https://github.com/farosikaria/fetch.git
     cd fetch
     pip install . 
     echo "Fetch Built at commit $(git rev-parse HEAD) which was on $(git log -1 --format=%cd)" >> "$SINGULARITY_LABELS"
